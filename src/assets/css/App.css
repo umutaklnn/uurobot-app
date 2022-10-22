@@ -3,12 +3,12 @@ body {
   padding: 0;
   place-items: baseline !important;
   background: linear-gradient(to right, #2f3640, #222f3e) !important;
+  background: #151414 !important ;
   font-family: "Montserrat", sans-serif;
 }
 
 #root {
-  width: 1280px;
+  width: 1434px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
