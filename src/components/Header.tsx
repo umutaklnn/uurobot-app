@@ -5,11 +5,13 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <section className="header">
-      <div className="img-box">
-        <img src={assetLogo} className="logo" alt="" />
+    <section className="header-f">
+      <div className="logo-div">
+        <NavLink to="/" className="a-item">
+          <img src={assetLogo} className="logo" alt="" />
+        </NavLink>
       </div>
-      <div className="ul-box">
+      <div className="menu-div">
         <ul className="ul-item">
           <li className="li-item">
             <NavLink to="projects" className="a-item">
@@ -33,6 +35,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
+      <div className="ext-div"></div>
     </section>
   );
 }

@@ -19,16 +19,22 @@
 .logo {
   width: 70px !important;
 }
-.img-box {
-  position: absolute;
-  top: 30px;
-  left: 120px;
-}
-.ul-box {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+ 
 
+.header-f{
+  display:flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  width: 100vw;
+}
+.logo-div{
+}
+.menu-div{
+}
+.ext-div{
+}
+.deneme{
+  border: 1px solid white;
+}
+ 
 

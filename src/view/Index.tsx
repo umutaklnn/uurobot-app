@@ -1,10 +1,12 @@
 import React from "react";
 import Slider from "../components/Slider";
+import HomeProjects from "./HomeProjects";
 
 export default function Index() {
   return (
-    <div>
+    <>
       <Slider />
-    </div>
+      <HomeProjects />
+    </>
   );
 }

@@ -35,7 +35,7 @@ export default function Slider() {
         mx="auto"
         withIndicators
         height={600}
-        sx={{ top: 200 }}
+        sx={{ top: 50 }}
       >
         {slides}
       </Carousel>
