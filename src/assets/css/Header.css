@@ -5,12 +5,15 @@
   list-style: none !important;
   margin-right: 15px;
 }
+
 .ul-item .li-item .a-item {
-  color: rgba(255, 255, 255, 0.4) !important;
+  color: rgba(255, 255, 255, 0.4);
   font-size: 20px;
   transition: 0.3s ease;
 }
-.ul-item .li-item .a-item:hover {
+
+.ul-item .li-item .a-item:hover,
+.ul-item .li-item .active {
   color: rgba(255, 255, 255, 0.7) !important;
   font-size: 20px;
   transition: 0.3s ease;
@@ -19,22 +22,11 @@
 .logo {
   width: 70px !important;
 }
- 
 
 .header-f{
   display:flex;
   justify-content: space-around;
   padding: 40px 0;
-  width: 100vw;
+  width: 100%;
 }
-.logo-div{
-}
-.menu-div{
-}
-.ext-div{
-}
-.deneme{
-  border: 1px solid white;
-}
- 
 

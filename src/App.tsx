@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import "./assets/css/App.css";
+import "./assets/css/index.css";
 import "./assets/css/Content.css";
 
 import Footer from "./components/Footer";
