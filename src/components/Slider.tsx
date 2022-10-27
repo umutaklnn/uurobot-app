@@ -1,8 +1,33 @@
 import { Carousel } from "@mantine/carousel";
-import assetLogo from "../assets/img/1-1.png";
 import "../assets/css/Carousel.css";
+import { useQuery } from "@tanstack/react-query";
+import getSliders from "../utils/getSliders";
+import { image } from "../types/image";
 
 export default function Slider() {
+  const { data, isLoading, isError } = useQuery(["sliders"], getSliders);
+
+  console.log(data);
+
+  const slides = data?.data.map((item) => {
+    return (
+      <SlideSingle
+        key={item.id}
+        content={item.attributes.content}
+        title={item.attributes.title}
+        image={item.attributes.image}
+      />
+    );
+  });
+
+  if (isLoading) {
+    return <div>Loading</div>;
+  }
+
+  if (isError) {
+    return <div>Error</div>;
+  }
+
   return (
     <div>
       <Carousel
@@ -12,33 +37,29 @@ export default function Slider() {
         height={600}
         sx={{ top: 200 }}
       >
-        <Carousel.Slide>
-          <div className="carousel-box">
-            <div className="img-box-carousel">
-              <img src={assetLogo} className="carousel-img " alt="" />
-            </div>
-            <div className="text-box">
-              <h1>Lorem ipsum dolor sit amet </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                finibus tortor nisl, a tempor neque imperdiet vel. Nulla
-                facilisi. Pellentesque malesuada auctor ligula sit amet
-                vehicula. Proin ut luctus ante, vitae rhoncus ex. Sed blandit
-                mauris ut nunc iaculis, vel pharetra urna congue. Suspendisse
-                gravida nunc porttitor justo cursus vestibulum. Proin lobortis
-                augue sit amet metus viverra fringilla. Maecenas convallis
-                maximus lacus, a dignissim turpis venenatis at. Sed in
-                ullamcorper nunc, nec convallis leo. Nulla erat purus, imperdiet
-                nec felis eu, viverra tristique elit. Quisque condimentum
-                malesuada suscipit.
-              </p>
-              <button type="button">Daha Fazla</button>
-            </div>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>2</Carousel.Slide>
-        <Carousel.Slide>3</Carousel.Slide>
+        {slides}
       </Carousel>
     </div>
+  );
+}
+
+function SlideSingle(props: { image: image; title: string; content: string }) {
+  return (
+    <Carousel.Slide>
+      <div className="carousel-box">
+        <div className="img-box-carousel">
+          <img
+            src={props.image.data.attributes.url}
+            className="carousel-img "
+            alt={props.image.data.attributes.name}
+          />
+        </div>
+        <div className="text-box">
+          <h1>{props.title}</h1>
+          <p>{props.content}</p>
+          <button type="button">Daha Fazla</button>
+        </div>
+      </div>
+    </Carousel.Slide>
   );
 }
