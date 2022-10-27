@@ -6,6 +6,7 @@ type slide = {
     title: string;
     content: string;
     image: image;
+    url?: string;
   };
 };
 

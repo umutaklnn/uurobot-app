@@ -16,6 +16,7 @@ export default function Slider() {
         content={item.attributes.content}
         title={item.attributes.title}
         image={item.attributes.image}
+        url={item.attributes.url}
       />
     );
   });
@@ -43,7 +44,12 @@ export default function Slider() {
   );
 }
 
-function SlideSingle(props: { image: image; title: string; content: string }) {
+function SlideSingle(props: {
+  image: image;
+  title: string;
+  content: string;
+  url?: string;
+}) {
   return (
     <Carousel.Slide>
       <div className="carousel-box">
@@ -57,7 +63,7 @@ function SlideSingle(props: { image: image; title: string; content: string }) {
         <div className="text-box">
           <h1>{props.title}</h1>
           <p>{props.content}</p>
-          <button type="button">Daha Fazla</button>
+          {props.url && <a href={props.url}>Daha Fazla</a>}
         </div>
       </div>
     </Carousel.Slide>
