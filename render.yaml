@@ -2,8 +2,6 @@ services:
   - type: web
     name: uurobot-app
     env: static
-    region: frankfurt
-    plan: free
 
     pullRequestPreviewsEnabled: true
 
