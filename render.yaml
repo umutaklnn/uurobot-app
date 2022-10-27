@@ -1,0 +1,20 @@
+services:      
+  - type: web
+    name: uurobot-app
+    env: static
+    region: frankfurt
+    plan: free
+
+    pullRequestPreviewsEnabled: true
+
+    buildCommand: npm cache clean --force && npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_STRAPI_URL
+        sync: false
+      - key: VITE_STRAPI_KEY
+        sync: false
