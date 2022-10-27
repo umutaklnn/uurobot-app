@@ -5,10 +5,9 @@ body {
   background: linear-gradient(to right, #2f3640, #222f3e) !important;
   background: #151414 !important ;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 #root {
-  width: 1434px;
   margin: 0 auto;
-  text-align: center;
 }
