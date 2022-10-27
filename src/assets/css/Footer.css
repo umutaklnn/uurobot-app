@@ -1,0 +1,44 @@
+footer {
+    background-color: rgb(49, 49, 49);
+    
+}
+
+footer h4 {
+    margin: 0;
+    font-size: xx-large;
+    font-weight: 200;
+    color: #30007D;
+}
+
+footer a {
+    color: #C8D6E5;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.footer-row-1 {
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #dcdde1;
+    
+}
+
+.footer-row-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 2rem 1rem 2rem;
+
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 40%, rgba(25,12,85,1) 90%, rgba(21,21,156,1) 100%);
+}
+
+.footer-column {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.footer-column-1 img {
+    height: 2.5rem;
+}
