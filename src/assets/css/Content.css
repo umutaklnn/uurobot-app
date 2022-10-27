@@ -1,0 +1,30 @@
+.card-img-box {
+}
+.card-img-item {
+}
+.card {
+  display: flex;
+}
+
+.card-img-box{
+    display: flex;
+    padding: 20px;
+}
+
+.content1 {
+  margin: 0 auto;
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 150px;
+  margin-top: 180px;
+}
+.card-text-box{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-direction: column;
+    padding: 50px;
+}
+.card-p{
+    text-align: start;
+}
