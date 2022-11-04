@@ -5,7 +5,7 @@ const instance = axios.create({
     Authorization: "Bearer " + import.meta.env.VITE_STRAPI_KEY,
   },
   params: {
-    populate: "image",
+    populate: "*",
   },
 });
 
