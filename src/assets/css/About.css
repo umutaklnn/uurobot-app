@@ -1,7 +1,13 @@
 .about-content {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 .about-div {
-    columns: 2;
+  columns: 2;
+}
+.projects_about {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-bottom: 150px;
 }

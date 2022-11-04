@@ -30,7 +30,7 @@ export default function Header() {
           </li>
           <li className="li-item">
             <NavLink to="team" className="a-item">
-              Takım
+              İletişim
             </NavLink>
           </li>
         </ul>
