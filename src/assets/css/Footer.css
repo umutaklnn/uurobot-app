@@ -24,7 +24,7 @@ footer a {
     padding: 10rem 2rem 1rem 2rem;
 
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 40%, rgba(25,12,85,1) 90%, rgba(21,21,156,1) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) , #0a3d62);
 }
 .footer-column {
     display: flex;

@@ -4,11 +4,12 @@
 }
 .card {
   display: flex;
+  margin-bottom: 100px;
 }
 
-.card-img-box{
-    display: flex;
-    padding: 20px;
+.card-img-box {
+  display: flex;
+  padding: 20px;
 }
 
 .content1 {
@@ -18,13 +19,29 @@
   margin-bottom: 150px;
   margin-top: 180px;
 }
-.card-text-box{
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
-    flex-direction: column;
-    padding: 50px;
+.content1_projects {
+  margin: 0 auto;
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 150px;
+  margin-top: 180px;
 }
-.card-p{
-    text-align: start;
+.card-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  padding: 50px;
+}
+.card-p {
+  text-align: start;
+}
+
+.card-button {
+  width: 216px;
+  border-radius: 0;
+  background: #3177c7;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
