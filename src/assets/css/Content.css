@@ -39,6 +39,7 @@
 
 .card-button {
   width: 216px;
+  padding: 10px;
   border-radius: 0;
   background: #3177c7;
   color: white;

@@ -7,3 +7,13 @@ export type image = {
     };
   };
 };
+
+export type images = {
+  data: {
+    id: number;
+    attributes: {
+      url: string;
+      name: string;
+    };
+  }[];
+};
