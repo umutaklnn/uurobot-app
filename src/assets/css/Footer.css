@@ -35,6 +35,15 @@ footer a {
     height: 2.5rem;
 }
 
+.marquee{
+    overflow-y: hidden;
+    padding: 25px 0;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+
 @media only screen and (max-width: 600px) {
     .footer-row-1 {
         flex-direction: column;

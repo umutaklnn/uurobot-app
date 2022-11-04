@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/Footer.css";
+import Marquee from "react-fast-marquee";
 
 import sponsorErdemkaya from "../assets/img/sponsor-erdemkaya.png";
 import sponsorHidropar from "../assets/img/sponsor-niluferhidropar.png";
@@ -7,11 +8,11 @@ import sponsorHidropar from "../assets/img/sponsor-niluferhidropar.png";
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-row-1">
+      <Marquee className="marquee">
         <h4>ROBOT TOPLULUĞU</h4>
         <h4>ROBOT TOPLULUĞU</h4>
         <h4>ROBOT TOPLULUĞU</h4>
-      </div>
+      </Marquee>
       <div className="footer-row-2">
         <div className="footer-column">
           <img src={sponsorErdemkaya} />
