@@ -17,12 +17,12 @@ export default function Projects() {
               pariatur, reiciendis deleniti, ducimus maiores nulla officia
               similique sunt! Facilis officia quia nesciunt!
             </p>
-            <button className="card-button">Detay</button>
           </div>
         </div>
       </div>
       <div>
-        <p className="about-div">
+        <h1>Proje Hakkında</h1>
+        <p className="about-div projects_about">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           fringilla suscipit posuere. Mauris commodo dolor justo, ac vehicula
           justo congue eget. Class aptent taciti sociosqu ad litora torquent per
@@ -42,6 +42,32 @@ export default function Projects() {
           porttitor vitae at mauris. Nunc est velit, ullamcorper in blandit ac,
           sodales sed metus.
         </p>
+      </div>
+      <div className="team_members">
+        <div className="leader">
+          <div className="item_card">Abc xys</div>
+        </div>
+        <div className="members">
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+        </div>
+        <div className="members">
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+        </div>
+        <div className="members">
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+          <div className="item_card">Abc xys</div>
+        </div>
       </div>
     </>
   );
