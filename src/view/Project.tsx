@@ -1,22 +1,40 @@
-import React from "react";
-import Drone from "../assets/img/drone-1.png";
+import { useParams } from "react-router-dom";
+import getProject from "../utils/getProject";
+import { useQuery } from "@tanstack/react-query";
 
 export default function Projects() {
+  const { id } = useParams<{ id: string }>();
+
+  if (!id) return <div>Project not found</div>;
+
+  // get react query to fetch the project
+  const {
+    data: project,
+    isLoading,
+    isError,
+  } = useQuery(["project", id], () => getProject(Number(id)));
+
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error</div>;
+
+  const leaderData = project.data.attributes.members[0];
+
+  console.log(project);
+
   return (
     <>
       <div className="content1_projects">
         <div className="card">
           <div className="card-img-box">
-            <img src={Drone} className="card-img-item" alt="" />
+            <img
+              src={project.data.attributes.images.data[0].attributes.url}
+              className="card-img-item"
+              alt=""
+            />
           </div>
           <div className="card-text-box">
-            <h1 className="card-h1">Rover</h1>
-            <p className="card-p">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto dolore, obcaecati eius facere aut ipsa soluta explicabo
-              pariatur, reiciendis deleniti, ducimus maiores nulla officia
-              similique sunt! Facilis officia quia nesciunt!
-            </p>
+            <h1 className="card-h1">{project.data.attributes.name}</h1>
+            <p className="card-p">{project.data.attributes.content}</p>
           </div>
         </div>
       </div>
@@ -44,6 +62,7 @@ export default function Projects() {
         </p>
       </div>
       <div className="team_members">
+        <h1>Ekip</h1>
         <div className="leader">
           <div className="item_card">Abc xys</div>
         </div>
