@@ -1,13 +1,5 @@
 import { images } from "./image";
-
-type project = {
-  id: number;
-  attributes: {
-    name: string;
-    content: string;
-    images: images;
-  };
-};
+import { project } from "./project";
 
 export type projectsResponse = {
   data: project[];

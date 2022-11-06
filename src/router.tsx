@@ -3,7 +3,7 @@ import App from "./App";
 
 import Index from "./view/Index";
 import About from "./view/About";
-import Projects from "./view/Projects";
+import Projects from "./view/Project";
 import Sponsors from "./view/Sponsors";
 import Team from "./view/Team";
 
