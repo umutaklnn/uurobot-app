@@ -28,6 +28,11 @@ export default function Header() {
               Sponsorlar
             </NavLink>
           </li>
+          <li className="li-item">
+            <NavLink to="team" className="a-item">
+              İletişim
+            </NavLink>
+          </li>
         </ul>
       </div>
       <div className="ext-div"></div>
