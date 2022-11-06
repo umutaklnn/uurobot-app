@@ -21,6 +21,7 @@ export default function HomeProjects() {
     console.log("data");
     return (
       <ProjectNode
+        key={item.id}
         name={item.attributes.name}
         content={item.attributes.content}
         image={item.attributes.images.data[0].attributes.url}

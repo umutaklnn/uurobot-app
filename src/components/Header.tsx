@@ -29,7 +29,7 @@ export default function Header() {
             </NavLink>
           </li>
           <li className="li-item">
-            <NavLink to="team" className="a-item">
+            <NavLink to="contact" className="a-item">
               İletişim
             </NavLink>
           </li>
